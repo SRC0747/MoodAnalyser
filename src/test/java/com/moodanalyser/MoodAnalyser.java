@@ -34,6 +34,14 @@ public class MoodAnalyser {
             // printing the message from InvalidAgeException object
             System.out.println("Exception occured: " + ex);
         }
+
+        // Checking and throwing Null Pointer Exception.
+        try {
+            validate(" ");
+        } catch (NullPointerException npe) {
+            // printing the message from NullPointerException for Invalid Input.
+            System.out.println("NullPointer Exception occured: " + npe);
+        }
     }
 }
 
